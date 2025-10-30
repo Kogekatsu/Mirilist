@@ -1083,7 +1083,8 @@ async function getdata() {
         const imageElement = document.createElement("img");
         if (edition== 140 ){
             imageElement.src = `/websites/Covers/${imgname}${[i]}.webp`;
-        }
+        }else
+            
         imageElement.onerror = function () {
             imageElement.src = '/styles/errorimg.webp';
         }
