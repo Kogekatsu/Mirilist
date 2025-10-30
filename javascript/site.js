@@ -1081,7 +1081,9 @@ async function getdata() {
         const imageInner = document.createElement("span");
         imageInner.style.cssText = "box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 142% 0px 0px;";
         const imageElement = document.createElement("img");
-
+        if (edition== 140 ){
+            imageElement.src = `/websites/Covers/${imgname}${[i]}.webp`;
+        }
         imageElement.onerror = function () {
             imageElement.src = '/styles/errorimg.webp';
         }
