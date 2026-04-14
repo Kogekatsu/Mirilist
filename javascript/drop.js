@@ -78,19 +78,6 @@ function createDropdownMenu() {
             dropdownContent.appendChild(a);
         });
 
-        // easter egg
-        if (i === 1) {
-            const easterEgg = document.createElement("a");
-            easterEgg.setAttribute("href", "/swolfy.html");
-
-            dropdownContent.appendChild(easterEgg);
-        }
-        if (i === 2) {
-            const easterEgg2 = document.createElement("a");
-            easterEgg2.setAttribute("href", "/past.html");
-
-            dropdownContent.appendChild(easterEgg2);
-        }
 
         // append button and dropdown content to dropdown
         dropdown.appendChild(button);
